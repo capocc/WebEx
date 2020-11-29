@@ -1,0 +1,84 @@
+/****************************GENERAL*******************************************/
+*{ /*TUTTO*/
+  box-sizing: border-box;
+}
+
+body { /*IMMAGINE DI SFONDO*/
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  font-family: 'Roboto Condensed', sans-serif; /* TODO: Cercare il font corretto */
+}
+
+.container{ /*RETTANGOLO TRASPARENTE*/
+  background-color: rgba(0,0,0,0.5);
+  width: 3050px;
+  height: 2100px;
+  margin-left: 900px;
+  margin-top: 110px;
+  padding: 180px  260px 180px 260px;
+}
+
+/****************************HEADER*******************************************/
+header *{ /*TUTTI I FIGLI DI HEADER*/
+  margin: auto;
+  text-align: center;
+}
+
+header img{ /*LE IMMAGINI IN HEADER*/
+  display: block;
+  width: 25%;
+  margin-bottom: 1%;
+}
+
+header h1{ /*IL TITOLO PRINCIPALE*/
+  color: rgb(0,255,0);
+  font-size: 500%;
+}
+
+header div{ /*BARRA TRE PULSANTI*/
+  background-color: rgb(0,255,0);
+}
+
+header button, main span{ /*PULSANTI IN HEADER E GLI SPAN IN MAIN*/
+  font-size: 300%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/****************************MAIN*******************************************/
+main{ /*TUTTO IL MAIN*/
+  color: white;
+}
+
+main h2{ /* I TITOLI NEL MAIN*/
+  font-size: 450%;
+  margin-bottom: 1%;
+}
+
+main h2::before{ /*PRIMA DEI TITOLI DI MAIN*/
+  content: ' \220E' ;
+}
+
+main span::before{/*PRIMA DI TUTTI GLI INIDRIZZI*/
+  content: ' \21A6' ;
+}
+
+main div{ /*TUTTI I RETTANGOLI COLORATI*/
+  padding: 1%;
+  border-radius: 10px;
+}
+
+#Gino{ /* SOLO IL RETTANGOLO GINO*/
+  width: 35%;
+  background-color: orange;/* TODO: Cercare il colore giusto */
+}
+
+#Mike{ /* SOLO IL RETTANGOLO MIKE*/
+  width: 60%;
+  background-color: rgb(0,255,0);
+}
+
+#Fede{ /* SOLO IL RETTANGOLO FEDE*/
+  width: 15%;
+  background-color: red;/* TODO: Cercare il colore giusto */
+}
